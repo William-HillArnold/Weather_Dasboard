@@ -1,0 +1,58 @@
+#header {
+    padding: 1em;
+    text-align: center;
+    margin: 2em .5em 2em .5em;
+    border-width: 1em auto 1em auto;
+    background-color: green; 
+    color: black;
+    box-shadow: 20px 20px 20px;
+}
+
+h1{
+    color: whitesmoke;
+    
+}
+
+h2 {
+    font-weight: bolder;
+    margin-left: 1em;
+}
+
+.search {
+    width: 20em; 
+    display: flex column;
+    float: left;
+    margin-top: 4em;
+    margin-left: 2em;
+    margin-bottom: 1.5em;
+
+}
+.btn{
+    align-items: center;
+    width: 18em;
+    margin-top: .8em;
+    margin-left: 1em;
+    background-color: lightgrey;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.btn:hover {
+    background-color: orange;
+}
+input {
+    margin-left: 1em;
+    text-align: center;
+    width: 18em;
+    margin-bottom: .5em;
+}    
+
+.infoBox {
+    
+    height: 30em;
+    width: 40em;
+    color: black;
+    border-style: solid black;
+}
