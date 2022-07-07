@@ -10,7 +10,6 @@
 
 h1{
     color: whitesmoke;
-    
 }
 
 h2 {
@@ -18,8 +17,14 @@ h2 {
     margin-left: 1em;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 25%;
+    grid-column-gap: 2em;
+}
+
 .search {
-    width: 20em; 
+    width: 16em; 
     display: flex column;
     float: left;
     margin-top: 4em;
@@ -27,9 +32,10 @@ h2 {
     margin-bottom: 1.5em;
 
 }
+
 .btn{
     align-items: center;
-    width: 18em;
+    width: 14em;
     margin-top: .8em;
     margin-left: 1em;
     background-color: lightgrey;
@@ -42,17 +48,35 @@ h2 {
 .btn:hover {
     background-color: orange;
 }
+
 input {
     margin-left: 1em;
     text-align: center;
-    width: 18em;
+    width: 14em;
     margin-bottom: .5em;
-}    
+} 
 
-.infoBox {
-    
-    height: 30em;
-    width: 40em;
-    color: black;
-    border-style: solid black;
+.infobox {
+    margin-left: 1em;
 }
+
+.row1 {
+    padding-bottom: 1.5rem;
+    background-color: whitesmoke;
+    border: .1em solid black;
+    margin: 6em 1em 1em 2em;
+}
+
+.forecast {
+    margin: 2em 0rem 2rem 2rem;
+    
+}
+
+.boxes {
+    padding: 1em;
+    color: whitesmoke;
+    background-color: lightgrey;
+    margin: 1rem 1rem 0rem 1rem ;
+    height: .5rem;
+}
+
