@@ -24,11 +24,11 @@ fetch ('https://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&A
  .then (data => {
      console.log(data);
     var cityValue = 'City: ' + data['name'];
-    var tempValue = 'Temperature: ' + data['main']['temp'];
+    var tempValue = 'Temperature: ' + data['main']['temp'] + '°F';
     var humidityValue = 'Humidity: ' + data['main']['humidity'];
-    var maxTempValue = 'Max: ' + data['main']['temp_max'];
-    var minTempValue = 'Min: ' + data['main']['temp_min'];
-    var windValue = 'Wind Speed: ' + data['wind']['speed'];
+    var maxTempValue = 'Max: ' + data['main']['temp_max']+ '°F';
+    var minTempValue = 'Min: ' + data['main']['temp_min']+ '°F';
+    var windValue = 'Wind Speed (mph): ' + data['wind']['speed'];
     //var descriptionValue = data['weather']['main'];
      
     
