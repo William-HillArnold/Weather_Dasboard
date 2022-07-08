@@ -18,17 +18,6 @@ var description = document.querySelector('.description')
 //        console.log(newCity);
 //   }
 
-var citySearchArray = localStorage.citySearchArray ? JSON.parse(localStorage.citySearchArray) : []
-
-// function showCityButtons () {
-// 	document.querySelector('#cityArray').innerHTML=''
-// 	for( i=0; i<citySearchArray.length; i++ )
-// 	document.querySelector('#cityArray').innerHTML+=`
-// 	<li onclick="weatherResults('${citySearchArray[i]}')"class="btn btn-secondary mb-1">${citySearchArray[i]}</li>`
-// }
-
-// showCityButtons()
-
 button.addEventListener('click', function() {
 fetch ('https://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&APPID=45bf08bcabf42c4645ac65d3c9686f82&units=imperial')
  .then(response => response.json())
