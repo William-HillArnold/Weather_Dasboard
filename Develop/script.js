@@ -23,21 +23,21 @@ fetch ('https://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&A
  .then(response => response.json())
  .then (data => {
      console.log(data);
-    var cityValue = data['name'];
-    var tempValue = data['main']['temp'];
-    var humidityValue = data['main']['humidity'];
-    var maxTempValue = data ['main']['temp_max'];
-    var minTempValue = data['main']['temp_min'];
+    var cityValue = 'City: ' + data['name'];
+    var tempValue = 'Temperature: ' + data['main']['temp'];
+    var humidityValue = 'Humidity: ' + data['main']['humidity'];
+    var maxTempValue = 'Max: ' + data['main']['temp_max'];
+    var minTempValue = 'Min: ' + data['main']['temp_min'];
+    var windValue = 'Wind Speed: ' + data['wind']['speed'];
     //var descriptionValue = data['weather']['main'];
-     var windValue = data['wind']['speed'];
-    
+     
     
      city.innerHTML = cityValue;
      temp.innerHTML = tempValue;
      humidity.innerHTML = humidityValue;
-     wind.innerHTML = windValue;
      tempMax.innerHTML = maxTempValue;
      tempMin.innerHTML = minTempValue;
+     wind.innerHTML = windValue;
      //description.innerHTML = descriptionValue
     // fetch()
     
