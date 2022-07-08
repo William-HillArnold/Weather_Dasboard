@@ -26,19 +26,19 @@ fetch ('https://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&A
     var humidityValue = data['main']['humidity'];
     var maxTempValue = data ['main']['temp_max'];
     //var minTempValue = data['main']['temp_min'];
-    var descriptionValue = data['weather']['description'];
+    //var descriptionValue = data['weather']['description'];
      //var windValue = data['wind'];
     
     
      city.innerHTML = cityValue;
      temp.innerHTML = tempValue;
      humidity.innerHTML = humidityValue;
-     description.innerHTML = descriptionValue
+     //description.innerHTML = descriptionValue
      //wind.innerHTML = windValue;
      //tempMax.innerHTML = maxTempValue;
      //tempMin.innerHTML = minTempValue;
     // fetch()
-    )
+    
  }) 
 
  
