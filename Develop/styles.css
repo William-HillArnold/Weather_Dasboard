@@ -58,8 +58,12 @@ input {
     width: 14em;
     margin-bottom: .5em;
 } 
+.box{
+    font-weight: bold;
+    font-size: 1.3em;
+}
 
-.infobox {
+.infobox-lg {
     margin-left: 1em;
 }
 
